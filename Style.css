@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato' , sans-serif;
+    text-decoration: aliceblue;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.sun{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgb(255, 119, 0);
+    box-shadow: 0 0 30px #fff;
+    border-radius: 50%;
+}
+.axis1{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-right:  2px solid #fff;
+    border-radius: 60%;
+     animation:  anime-1 4s linear infinite;
+}
+
+@keyframes anime-1{
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+.axis1 .earth{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: steelblue;
+    border-radius: 50%;
+    left: 180px;
+    top: 370px;
+}
+
+.axis2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-right: 3px solid  #fff;
+    top: 350px;
+    left: 160px;
+    animation: anime-1 5s linear infinite;
+}
+
+.axis2 .moon{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border-right: 2px solid  #fff;
+    top: 85px;
+    left: 50px;
+    
+}
